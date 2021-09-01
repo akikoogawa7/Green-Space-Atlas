@@ -10,3 +10,6 @@ The aim for this project is to fuse these varying visual scripts along with any 
 
 ## Goal
 The goal for this project is to create an app for the stakeholders mentioned above that provides realtime visualisations on green spaces, water features and soil moisture health on the city landscape, offering objective ground truths which individuals and groups can therefore act upon. 
+
+## Machine Learning
+Perhaps there could be a potential machine learning product to provide intelligent predictions for our stakeholders. This will only be considered after creating the minimum viable product.
