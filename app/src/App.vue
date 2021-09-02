@@ -1,25 +1,19 @@
 <template>
-  <img alt="Green atlas logo" src="./assets/satellite.png" width='100'>
-  <div id="app">@{{ user.username }}</div>
+  <h1 id="headerbar">
+  <img alt="Green atlas logo" src="./assets/satellite.png" width='50'>
+  Green Space Atlas
+  </h1>
+  <div id="app">
+      <Map />
+  </div>
 </template>
 
 <script>
+import Map from './components/Map.vue'
 
 export default {
   name: 'App',
-  data() {
-    return {
-      countries: 'list of countries',
-      map: 'map',
-      user: {
-        username: 'akikoogawa7',
-        firstName: 'Akiko',
-        lastName: 'Ogawa',
-        email: 'akiko.ogawaa@gmail.com',
-        isAdmin: true
-      }
-    }
-  }
+  components: { Map }
 }
 </script>
 
@@ -28,8 +22,19 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#headerbar {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 0px;
+  display: flex;
 }
 </style>
