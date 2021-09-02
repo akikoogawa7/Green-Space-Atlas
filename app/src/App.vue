@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Green atlas logo" src="./assets/satellite.png" width='100'>
+  <div id="app">@{{ user.username }}</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      countries: 'list of countries',
+      map: 'map',
+      user: {
+        username: 'akikoogawa7',
+        firstName: 'Akiko',
+        lastName: 'Ogawa',
+        email: 'akiko.ogawaa@gmail.com',
+        isAdmin: true
+      }
+    }
   }
 }
 </script>
