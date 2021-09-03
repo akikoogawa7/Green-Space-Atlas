@@ -1,5 +1,5 @@
 <template>
-  <div class='map'>
+  <div class='cell-map'>
   <div style="height: 75vh; width: 50vw;">
     <l-map
       v-model="zoom"
@@ -132,9 +132,24 @@ export default {
 
 </script>
 
-
 <style>
-.map {
+.cell {
+  border-radius: 4px;
+  background-color: lightgrey;
+}
+.cell-map {
   height: 180px;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.cell-edit {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.cell-inspect {
+  grid-column: 2;
+  grid-row: 2;
 }
 </style>

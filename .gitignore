@@ -3,3 +3,4 @@ sh_config.py
 __pycache__
 .ipynb_checkpoints
 notes.txt
+../sentinel_apis/
