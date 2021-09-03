@@ -4,7 +4,17 @@
   Green Space Atlas
   </h1>
   <div id="app">
-      <Map />
+    <div class="cell cell-map">
+      Map
+    <Map />
+
+    </div>
+    <div class="cell cell-edit">
+      Edit
+    </div>
+    <div class="cell cell-inspect">
+      Inspect
+    </div>
   </div>
 </template>
 
@@ -36,5 +46,26 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   margin-top: 0px;
   display: flex;
+}
+
+.cell {
+  border-radius: 4px;
+  background-color: lightgrey;
+}
+
+.cell-map {
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cell-edit {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.cell-inspect {
+  grid-column: 2;
+  grid-row: 2;
 }
 </style>
